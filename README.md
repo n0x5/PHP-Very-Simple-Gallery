@@ -13,3 +13,6 @@ Guide:
 month - year like 'archive/August 2015'. New month folders are created automatically upon usage of the bookmark.
 NOTE: You need to have a direct link to an image in the browser for it to work
 
+You also need a phpthumb.Config file for example you can use mine
+
+https://github.com/n0x5/PHP-Very-Simple-Gallery/commit/555164d688a0c6f980e262c51a415647d77c9a9e
