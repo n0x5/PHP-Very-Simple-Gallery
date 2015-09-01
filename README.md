@@ -3,7 +3,7 @@ Simply drop file into folder
 
 Guide:
 
-1) put files in a new folder accessible from the web
+1) put all the files in a new folder where you want the gallery accessible from the web
 
 2) create two folders named 'cache' and 'archive'
 
