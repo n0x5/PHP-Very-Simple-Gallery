@@ -1,0 +1,3 @@
+# add this as a regular bookmark in your browser, also works for mobile chrome
+
+javascript:location.href='http://your-url.com/gallery/bookmarklet.php?i='+encodeURIComponent(location.href)
