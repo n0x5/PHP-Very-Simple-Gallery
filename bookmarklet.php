@@ -13,7 +13,7 @@ if (!file_exists("$folder")) {
 
 chmod("./archive/$month/", 0755);
 
-htmlspecialchars(file_put_contents($folder . basename($domain), $homepage), 'UTF-8');
+file_put_contents($folder . basename($domain), $homepage);
 chmod("./archive/$month/$file", 0755);
 echo "saved to <a href=\"$month/$file\">$_SERVER[HTTP_HOST]/archive/$month/$file</a>";
 echo "<img src=\"archive/$month/$file\" width=\"700px\" < /><br>";
