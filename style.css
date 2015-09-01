@@ -1,0 +1,57 @@
+body {
+padding: 20px;
+background-color: #151515;
+color: gray;
+font-family: Georgia, Verdana, Arial;
+font-size: 13px;
+}
+
+.wrapper {
+width: 900px;
+margin: 0px auto;
+}
+
+.menu {
+float: right;
+padding: 5px;
+margin: 5px;
+}
+
+.menus {
+margin-top: 30px;
+}
+
+a {
+text-decoration: none;
+font-weight: normal;
+font-size: 13px;
+color: #156c9e;
+}
+
+a:hover {
+color: gray;
+}
+
+#photos img {
+}
+
+#photos img:hover {
+}
+
+img {
+}
+
+.imgbox {
+border: 1px solid #424242;
+margin: 4px;
+padding: 10px;
+float: left;
+}
+
+.imgbox:hover {
+background-color: #424242;
+}
+
+.ftime {
+margin-bottom: 5px
+}
