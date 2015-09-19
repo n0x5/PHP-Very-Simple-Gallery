@@ -5,6 +5,7 @@ $month2 = date("Y");
 $month = "$month1$month2";
 $domain = $_GET["i"];
 $homepage = file_get_contents($domain);
+//$folder = "./archive/$month/";
 
 $file = basename($domain);
 
@@ -13,7 +14,7 @@ $path_parts = pathinfo($file);
 
 $rmlast = substr($pathp2, 0, -2);
 $folder = "./archive/$month/$rmlast/";
-$maindir = "/your/webp/archive";
+$maindir = "/home/coax/nrtests/webp/archive";
 
 if (!file_exists("$folder")) {
     mkdir("$maindir/$month/$rmlast/", 0755, true);
@@ -31,4 +32,3 @@ echo "saved to <a href=\"archive/$month/$rmlast/$pathp2.webp\">$_SERVER[HTTP_HOS
 echo "<img src=\"archive/$month/$rmlast/$pathp2.webp\" width=\"700px\" < />";
 
 ?>
-
