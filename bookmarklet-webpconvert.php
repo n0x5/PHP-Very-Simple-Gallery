@@ -5,7 +5,6 @@ $month2 = date("Y");
 $month = "$month1$month2";
 $domain = $_GET["i"];
 $homepage = file_get_contents($domain);
-//$folder = "./archive/$month/";
 
 $file = basename($domain);
 
