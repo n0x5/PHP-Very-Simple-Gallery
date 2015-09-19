@@ -14,7 +14,7 @@ $path_parts = pathinfo($file);
 
 $rmlast = substr($pathp2, 0, -2);
 $folder = "./archive/$month/$rmlast/";
-$maindir = "/home/coax/nrtests/webp/archive";
+$maindir = "/your/webp/archive";
 
 if (!file_exists("$folder")) {
     mkdir("$maindir/$month/$rmlast/", 0755, true);
