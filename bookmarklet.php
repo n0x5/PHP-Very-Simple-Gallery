@@ -21,7 +21,7 @@ $rmlast = substr($pathp2, 0, -2);
 $rmlast2 = urlencode($rmlast);
 $rmlast3 = clean($rmlast2);
 $folder = "./archive/$month/$rmlast3/";
-$maindir = "/home/your/jpg/archive";
+$maindir = "archive";
 if (!file_exists("$folder")) {
     mkdir("$maindir/$month/$rmlast3/", 0755, true);
 }
