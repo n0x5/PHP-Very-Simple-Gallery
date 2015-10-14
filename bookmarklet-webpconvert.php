@@ -33,7 +33,7 @@ $maindir = "archive";
 if (!file_exists("$folder")) {
     mkdir("$maindir/$month/$rmlast3/", 0755, true);
 }
-
+chmod("$maindir/$month/", 0755);
 chmod("$maindir/$month/$rmlast3/", 0755);
 
 $domain4 = basename($domain2);
