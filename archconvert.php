@@ -15,7 +15,7 @@ $count = count($files);
 echo "<title>$domain $count images</title>";
 echo "<p>Gallery: $domain, items: $count</p>";
 foreach($files as $file) {
-    $file2 = basename($file);
+    $file2 = urlencode(basename($file));
     $path_parts = pathinfo($file);
     $pathp2 = $path_parts['filename'];
     $ftime = date ("F d Y", filemtime($file));
