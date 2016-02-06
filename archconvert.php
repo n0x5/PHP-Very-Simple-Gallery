@@ -3,12 +3,13 @@
 //require('/home/wp/wp-blog-header.php');
 ?>
 
+
 <?php
 require_once 'head3.php';
 echo '<div id="photos">';
 $domain = $_GET["which"];
-$files = glob("archive/$domain/*");
 
+$files = glob("archive/$domain/*");
 array_multisort(
 array_map( 'filemtime', $files ),
 SORT_NUMERIC,
@@ -37,7 +38,9 @@ foreach($files as $file) {
         $file55 = rawurlencode($file1);
     }
 
-echo "<div class=\"imgbox\"><div class=\"ftime\">$pathp22</div><a href=\"archcon2.php?which=/$domain/$file3\" target=\"_blank\"><img src=\"phpThumb.php?src=/$file55&amp;w=250&amp;h=250&amp;far=C&amp;bg=ffffff\" height=\"250\" alt=\"$file2\" title=\"$file2\"></a></div>";     
+$domain2 = rawurlencode($domain);
+
+echo "<div class=\"imgbox\"><div class=\"ftime\">$pathp22</div><a href=\"archcon2.php?which=$domain&which2=$file3\" target=\"_blank\"><img src=\"phpThumb.php?src=/$file55&amp;w=250&amp;h=250&amp;far=C&amp;bg=ffffff\" height=\"250\" alt=\"$file2\" title=\"$file2\"></a></div>";     
 }
 ?>
 </div>
